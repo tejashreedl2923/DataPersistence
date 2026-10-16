@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#24151D"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dear, diary."
+            android:textColor="#FFF2F4"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="serif" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A little space for your thoughts"
+            android:textColor="#D6B6C0"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#DFA6B5"
+            android:background="@drawable/search_background"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:drawablePadding="12dp"
+            android:hint="Find a little thought..."
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#E8C8D1"
+            android:singleLine="true"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your little moments"
+            android:textColor="#FFF2F4"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Give your note a title"
+            android:textColor="#FFF2F4"
+            android:textColorHint="#D6B6C0"
+            android:backgroundTint="#DFA6B5"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/etNoteContent"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Write something lovely..."
+            android:textColor="#FFF2F4"
+            android:textColorHint="#D6B6C0"
+            android:backgroundTint="#DFA6B5"
+            android:gravity="top"
+            android:inputType="textMultiLine|textCapSentences"
+            android:paddingTop="12dp" />
+
+        <Button
+            android:id="@+id/btnSaveNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="＋  Save a little thought"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#512635"
+            android:backgroundTint="#F4B8C4"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:id="@+id/notesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvEmptyNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your story starts here ♡"
+            android:textColor="#D6B6C0"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:padding="24dp" />
+
+    </LinearLayout>
+</ScrollView>
